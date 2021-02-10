@@ -9,6 +9,24 @@
   --black-bg-color: #2f303a;
 }
 
+/* .item * {
+  outline: 2px solid red;
+} */
+
+/* Утилиты  */
+
+/* Есть в нормализаторе стилей */
+
+/* Html {
+  box-sizing: border-box;
+}
+
+*,
+*::befor,
+*::after {
+  box-sizing: inherit;
+} */
+
 body {
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
@@ -30,6 +48,14 @@ img {
   height: auto;
 }
 
+/* стиль для списков */
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* для скрытия */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -44,14 +70,18 @@ img {
   overflow: hidden;
 }
 
-/* стиль для списков */
-.list {
-  list-style: none;
+.container {
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* Стиль лого*/
 .logo {
   color: #000000;
+
   font-family: Raleway, sans-serif;
   font-weight: bold;
   font-size: 26px;
@@ -65,6 +95,7 @@ img {
 
 .logo.title {
   color: var(--accent);
+
   font-family: Raleway, sans-serif;
   font-weight: bold;
   font-size: 26px;
@@ -74,6 +105,7 @@ img {
 
 .logo.header {
   color: #000000;
+  margin: 0;
 }
 
 .logo.footer {
@@ -81,16 +113,34 @@ img {
 }
 
 /* стили для навигации в шапке */
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
 .site-nav,
 .site-contacts {
+  display: flex;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
+.site-nav {
+  margin-left: 93px;
+  align-items: center;
+}
+
+.site-contacts {
+  margin-left: auto;
+}
+
 .site-nav .link {
   color: var(--title-text-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .site-nav .link:hover,
@@ -104,11 +154,21 @@ img {
 
 .site-contacts .link {
   color: var(--primary-text-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .site-contacts .link:hover,
 .site-contacts .link:focus {
   color: var(--accent);
+}
+
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.site-contacts .item + .item {
+  margin-left: 50px;
 }
 
 /* Герой */
@@ -119,6 +179,9 @@ img {
 }
 
 .hero-title {
+  padding-bottom: 40px;
+  margin-top: 0;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -140,11 +203,15 @@ img {
 
 /* секции */
 .section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
   color: var(--primary-text-color);
   letter-spacing: 0.03em;
 }
 
 /* секция наши преимущества */
+
 .section-title {
   color: var(--title-text-color);
   font-weight: bold;
@@ -158,9 +225,25 @@ img {
   line-height: 1.71;
 }
 
+.item {
+  outline: 2px silod tomato;
+  background-color: tomato;
+}
+
+.features .list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: calc((100% - 90px) / 4);
+}
+
+.features > .item:not(:nth-child(4n)) {
+  margin-right: 30px;
+}
+
 /* Секция чем мы занимаемся */
 .fetures .title {
   color: var(--title-text-color);
+
   font-size: 14px;
   line-height: 1.14;
   font-weight: bold;
