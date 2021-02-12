@@ -120,7 +120,8 @@ img {
 .header-nav {
   display: flex;
   align-items: center;
-  min-height: 80px;
+
+  /* min-height: 80px; */
 }
 
 /* второй вариант для вертикальных оступов */
@@ -173,6 +174,11 @@ img {
 
 .site-nav .item:not(:last-child) {
   margin-right: 50px;
+}
+
+.site-contacts > .item {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .site-contacts .item + .item {
@@ -374,8 +380,6 @@ img {
 
 .address {
   padding-bottom: 60px;
-  /* display: flex;
-  flex-direction: column; */
 
   font-size: 14px;
   line-height: 1.71;
