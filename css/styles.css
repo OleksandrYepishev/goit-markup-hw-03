@@ -199,16 +199,18 @@ img {
   letter-spacing: 0.06em;
 }
 
+.hero .container {
+  max-width: 696px;
+}
+
 .hero-title {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
+  color: var(--primary-white-color);
 
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-transform: uppercase;
-
-  color: var(--primary-white-color);
 }
 
 .button {
