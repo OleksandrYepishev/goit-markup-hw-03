@@ -389,13 +389,13 @@ img {
 
 .address-map {
   margin: 0;
-  padding-top: 20px;
+  margin-top: 20px;
   color: var(--primary-white-color);
 }
 
 .address-link {
   display: block;
-  padding-top: 9px;
+  margin-top: 9px;
   color: var(--alpha-white-color);
 }
 
