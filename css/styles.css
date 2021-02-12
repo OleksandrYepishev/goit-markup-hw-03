@@ -413,6 +413,7 @@ img {
 .filter.list {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .radiobutton:not(:nth-last-of-type(4n)) {
@@ -441,7 +442,6 @@ img {
 }
 
 .portfolio.list {
-  padding-top: 50px;
   display: flex;
   flex-wrap: wrap;
 }
