@@ -191,7 +191,7 @@ img {
   align-items: center;
   justify-content: center;
   min-height: 600px;
-  min-width: 1600px;
+  max-width: 1600px;
 
   background-color: var(--black-bg-color);
 
@@ -365,16 +365,14 @@ img {
 
 /* футер */
 .footer-page {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background-color: var(--black-bg-color);
 }
 
 .footer-page > .container {
   max-width: 1600px;
-  min-height: 252px;
-}
-
-.footer-page .logo {
-  padding-top: 60px;
 }
 
 .logo.footer {
@@ -383,8 +381,6 @@ img {
 }
 
 .address {
-  padding-bottom: 60px;
-
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -410,7 +406,9 @@ img {
 
 /* Страница Портфолио  */
 .page-header {
-  border: 1px solid #ececec;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #ececec;
 }
 
 /* Фильтра */
